@@ -18,6 +18,9 @@ public class Item {
     private String title;
 
     @ColumnInfo
+    private int price;
+
+    @ColumnInfo
     private String description;
 
     @ColumnInfo
@@ -83,5 +86,13 @@ public class Item {
 
     public void setRating(Rating rating) {
         this.rating = rating;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }

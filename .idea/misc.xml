@@ -5,12 +5,20 @@
       <map>
         <entry key="app/src/main/res/drawable/bottom_nav_selector.xml" value="0.15092592592592594" />
         <entry key="app/src/main/res/drawable/curve_background.xml" value="0.15092592592592594" />
+        <entry key="app/src/main/res/drawable/round_active.xml" value="0.1625" />
+        <entry key="app/src/main/res/drawable/round_corner_bg.xml" value="0.1625" />
+        <entry key="app/src/main/res/drawable/round_inactive.xml" value="0.1625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/cart_item.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/category_overview_item.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/feature_item.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="app/src/main/res/layout/payments_fragment.xml" value="0.1734375" />
+        <entry key="app/src/main/res/layout/product_item.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1734375" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>

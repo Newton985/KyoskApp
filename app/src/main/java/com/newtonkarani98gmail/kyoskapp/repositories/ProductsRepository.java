@@ -2,6 +2,7 @@ package com.newtonkarani98gmail.kyoskapp.repositories;
 
 import android.app.Application;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.room.Room;
 
@@ -11,6 +12,7 @@ import com.newtonkarani98gmail.kyoskapp.retrofit.ServiceBuilder;
 import com.newtonkarani98gmail.kyoskapp.room.KyoskDatabase;
 import com.newtonkarani98gmail.kyoskapp.services.ProductsService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -62,6 +64,21 @@ public class ProductsRepository {
             }
         });
 
+    }
+
+    public List<Item> getItemsByCategory(@NonNull String category){
+        List<Item> itemList = new ArrayList<>();
+
+        if (itemsMutableLiveData.getValue() != null) {
+            for (Item item : itemsMutableLiveData.getValue()){
+                if (item.getCategory().equals(category)){
+                    itemList.add(item);
+                }
+            }
+
+        }
+
+        return itemList;
     }
 
 
