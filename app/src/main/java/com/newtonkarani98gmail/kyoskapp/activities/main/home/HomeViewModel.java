@@ -28,10 +28,10 @@ public class HomeViewModel extends AndroidViewModel {
         categoriesResponseMutableLiveData = productsRepository.getCategoriesResponseMutableLiveData();
         itemsMutableLiveData = productsRepository.getItemsMutableLiveData();
 
-        featureImages.add("https://www.freeimages.com/photo/eggs-oranges-5-1546938");
-        featureImages.add("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fadvertising&psig=AOvVaw1kZalqFH6s9_mVlU5tdAjI&ust=1634903712665000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjNhou52_MCFQAAAAAdAAAAABAJ");
-        featureImages.add("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.livelaw.in%2Fadvertisement-is-facet-of-commercial-speech-protected-by-article-191a-of-constitution-holds-delhi-hc-read-judgment%2F&psig=AOvVaw1kZalqFH6s9_mVlU5tdAjI&ust=1634903712665000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjNhou52_MCFQAAAAAdAAAAABAP");
-        featureImages.add("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.eco-business.com%2Fnews%2Fadvertisements-harm-the-planet-researchers-say%2F&psig=AOvVaw1kZalqFH6s9_mVlU5tdAjI&ust=1634903712665000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjNhou52_MCFQAAAAAdAAAAABAb");
+        featureImages.add("https://images.unsplash.com/photo-1634733594199-1b406eef4afc?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+        featureImages.add("https://images.unsplash.com/photo-1593642702749-b7d2a804fbcf?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+        featureImages.add("https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+        featureImages.add("https://images.unsplash.com/photo-1593642532454-e138e28a63f4?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
     }
 
     public void getItems(){
