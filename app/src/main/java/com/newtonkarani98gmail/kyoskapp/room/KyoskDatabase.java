@@ -10,5 +10,4 @@ import com.newtonkarani98gmail.kyoskapp.models.Item;
 public abstract class KyoskDatabase extends RoomDatabase {
   public abstract  ItemsDao getItemDao();
   public  abstract  CategoriesDao categoriesDao();
-
 }

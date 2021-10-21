@@ -22,6 +22,8 @@ public class HomeViewModel extends AndroidViewModel {
     private final MutableLiveData<List<Item>> itemsMutableLiveData;
     private final List<String> featureImages = new ArrayList<>();
 
+    private MutableLiveData<Integer> activeCategory = new MutableLiveData<>();
+
     public HomeViewModel(@NonNull Application application) {
         super(application);
         productsRepository = new ProductsRepository(application);
@@ -32,6 +34,7 @@ public class HomeViewModel extends AndroidViewModel {
         featureImages.add("https://images.unsplash.com/photo-1593642702749-b7d2a804fbcf?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
         featureImages.add("https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
         featureImages.add("https://images.unsplash.com/photo-1593642532454-e138e28a63f4?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+
     }
 
     public void getItems(){
@@ -57,5 +60,9 @@ public class HomeViewModel extends AndroidViewModel {
 
     public List<String> getFeatureImages() {
         return featureImages;
+    }
+
+    public MutableLiveData<Integer> getActiveCategory() {
+        return activeCategory;
     }
 }

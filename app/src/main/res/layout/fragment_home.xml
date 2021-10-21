@@ -33,8 +33,8 @@
         />
     
   <TextView
-      android:layout_width="50dp"
-      android:layout_height="50dp"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
       app:layout_constraintTop_toBottomOf="@id/text_home"
       app:layout_constraintStart_toStartOf="parent"
       android:id="@+id/logoText"
@@ -42,13 +42,13 @@
       android:background="@drawable/round_corner_bg"
       android:gravity="center"
       android:text="K"
-      android:textSize="35sp"
+      android:textSize="30sp"
       android:textStyle="bold"
       android:layout_margin="10dp"/>
 
     <EditText
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         app:layout_constraintTop_toBottomOf="@id/text_home"
         app:layout_constraintStart_toEndOf="@id/logoText"
         android:layout_margin="10dp"
@@ -75,14 +75,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/gray"
-            android:padding="10dp"
+            android:paddingHorizontal="10dp"
             android:id="@+id/featuresRecyclerView"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
             android:textStyle="bold"
             android:text="Lorem Ipsum Ksh 2000"
             app:layout_constraintTop_toBottomOf="@id/featuresRecyclerView"
@@ -93,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="Lorem ipsum dolor \nsit amet, consectetur \nadipiscing elit"
+                android:text="Lorem ipsum dolor sit amet, \nconsectetur adipiscing elit"
                 app:layout_constraintTop_toBottomOf="@id/text1"
                 android:id="@+id/text2"
                 android:background="@color/gray"/>
@@ -120,57 +121,7 @@
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:id="@+id/horizontalLinear">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:paddingHorizontal="10dp"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:background="@drawable/round_active"
-                        android:text="All"
-                        android:id="@+id/topRatedText"
-                        android:minWidth="80dp"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:paddingHorizontal="10dp"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:background="@drawable/round_inactive"
-                        android:text="C123"
-                        android:id="@+id/upComingText"
-                        android:minWidth="80dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:paddingHorizontal="10dp"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:background="@drawable/round_inactive"
-                        android:text="C123"
-                        android:id="@+id/popularText"
-                        android:minWidth="80dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:paddingHorizontal="10dp"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:background="@drawable/round_inactive"
-                        android:text="C123"
-                        android:id="@+id/nowPlayingText"
-                        android:minWidth="80dp"/>
 
                 </LinearLayout>
             </HorizontalScrollView>

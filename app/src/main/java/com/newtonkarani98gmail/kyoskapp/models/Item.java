@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class Item {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private  int itemId;
 
     @ColumnInfo

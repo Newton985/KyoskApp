@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+    
+    <data>
+        <variable
+            name="item"
+            type="com.newtonkarani98gmail.kyoskapp.models.Item" />
+    </data>
+    
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -13,7 +20,7 @@
         android:id="@+id/itemImage"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:scaleType="fitXY"
+        imageUrl="@{item.image}"
         android:contentDescription="Image"/>
 
     <TextView
@@ -22,7 +29,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/itemImage"
         android:layout_margin="10dp"
-        android:id="@+id/itemName"/>
+        android:id="@+id/itemName"
+        android:text="@{item.title}"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,6 +39,7 @@
         app:layout_constraintTop_toBottomOf="@id/itemName"
         app:layout_constraintStart_toEndOf="@id/itemImage"
         android:layout_margin="10dp"
+        android:text="@{`Ksh `+ item.price}"
         android:id="@+id/itemCost"/>
 
 
@@ -51,7 +61,7 @@
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/itemCost"
         app:layout_constraintStart_toEndOf="@id/subtractText"
-        android:text="1"
+        android:text="3"
         android:textColor="#000"
         android:textStyle="bold"
         android:id="@+id/itemCount"/>
