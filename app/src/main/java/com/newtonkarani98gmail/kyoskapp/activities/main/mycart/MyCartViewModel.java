@@ -30,7 +30,6 @@ public class MyCartViewModel extends AndroidViewModel {
         productsRepository.getItemsInCart();
     }
 
-
     public MutableLiveData<List<Item>> getCartItemsMutableLiveData() {
         return cartItemsMutableLiveData;
     }
