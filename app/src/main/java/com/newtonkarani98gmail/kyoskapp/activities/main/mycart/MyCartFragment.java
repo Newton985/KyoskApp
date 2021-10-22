@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.newtonkarani98gmail.kyoskapp.databinding.FragmentMyCartBinding;
+import com.newtonkarani98gmail.kyoskapp.dialog.CustomDialog;
 import com.newtonkarani98gmail.kyoskapp.models.Item;
 
 import java.util.ArrayList;
@@ -46,8 +47,19 @@ public class MyCartFragment extends Fragment {
             }
         });
 
+        binding.checkoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CustomDialog customDialog = new CustomDialog(getContext());
+                customDialog.show();
+
+            }
+        });
+
 
         myCartViewModel.getCartItems();
+
+
 
         return root;
     }
